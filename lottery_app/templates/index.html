@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lottery App</title>
+</head>
+<body>
+    <h1>Welcome to the Lottery App</h1>
+    <h3>Players:</h3>
+    <ul>
+        {% for player in players %}
+            <li>{{ player }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/enter">Enter the Lottery</a> | <a href="/pick_winner">Pick a Winner</a> | <a href="/blockchain">View Blockchain</a>
+</body>
+</html>

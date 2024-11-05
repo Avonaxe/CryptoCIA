@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Lottery</title>
+</head>
+<body>
+    <h1>Enter the Lottery</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <form method="post">
+        <label for="player_name">Player Name:</label>
+        <input type="text" id="player_name" name="player_name" required>
+        <button type="submit">Enter</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pick Winner</title>
+</head>
+<body>
+    <h1>Pick a Winner</h1>
+    {% if winner %}
+        <p>{{ message }}</p>
+    {% else %}
+        <p>No players have entered the lottery.</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

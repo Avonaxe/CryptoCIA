@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockchain</title>
+</head>
+<body>
+    <h1>Blockchain</h1>
+    {% for block in chain %}
+        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+            <p><strong>Index:</strong> {{ block.index }}</p>
+            <p><strong>Previous Hash:</strong> {{ block.previous_hash }}</p>
+            <p><strong>Data:</strong> {{ block.data }}</p>
+            <p><strong>Hash:</strong> {{ block.hash }}</p>
+        </div>
+    {% endfor %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
+
+
+
